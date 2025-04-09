@@ -1,0 +1,47 @@
+/* src/components/Login.css */
+
+.login-container {
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.card {
+  border-radius: 15px;
+  border: none;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background-color: #5d7778;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #5d7778;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.text-primary {
+  font-weight: bold;
+  color: #FF7E5F;
+}
+
+@media (max-width: 767.98px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,84 @@
+/* src/components/Header.css */
+
+/* General header styles */
+.header {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease;
+  background-color: #f8f9fa; /* Light background for the header */
+}
+
+/* Logo styling */
+.logo-img {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #007bff; /* Bootstrap primary color */
+}
+
+/* Navigation links styling */
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #343a40; /* Dark color for links */
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Primary color on hover */
+}
+
+/* Auth links button styling */
+.auth-links a,
+.auth-links .logout-button {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Message display styling */
+.message {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffc107;
+  color: #000;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  text-align: center;
+  z-index: 1000;
+}
+
+.alert {
+  z-index: 1050;
+  opacity: 0.9;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .auth-links {
+    margin-top: 1rem;
+  }
+
+  .message {
+    top: 20%;
+  }
+}

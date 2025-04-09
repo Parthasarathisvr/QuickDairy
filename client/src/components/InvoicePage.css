@@ -1,0 +1,52 @@
+/* src/components/InvoicePage.css */
+
+.invoice-header {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.company-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.company-details {
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+
+.invoice-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffa500;
+}
+
+.invoice-number {
+  font-size: 1.2em;
+  margin-top: -10px;
+}
+
+.table-bordered th, .table-bordered td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-warning {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+.total-section {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.payment-method {
+  margin-bottom: 20px;
+}
+
+.payment-method input {
+  margin-right: 10px;
+}

@@ -1,0 +1,106 @@
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.body-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.product-card, .brand-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.product-card:hover, .brand-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image, .brand-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Container for the "Our Brands" section */
+.our-brands-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.our-brands-section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Styling each brand card */
+.brand-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Fixed height for uniformity */
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.brand-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Responsive grid for brand images */
+.row.g-4 {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adds consistent spacing between cards */
+  flex-wrap: wrap;
+}
+
+.col-md-2 {
+  flex: 1 1 calc(16.66% - 20px); /* 6 cards per row, accounting for gap */
+  max-width: calc(16.66% - 20px);
+  min-width: 150px; /* Minimum width to avoid shrinking too much */
+}
+
+/* Media Queries for responsive behavior */
+@media (max-width: 1200px) {
+  .col-md-2 {
+    flex: 1 1 calc(20% - 20px); /* 5 cards per row */
+  }
+}
+
+@media (max-width: 992px) {
+  .col-md-2 {
+    flex: 1 1 calc(25% - 20px); /* 4 cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-2 {
+    flex: 1 1 calc(33.33% - 20px); /* 3 cards per row */
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-2 {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 400px) {
+  .col-md-2 {
+    flex: 1 1 calc(100% - 20px); /* 1 card per row */
+  }
+}
