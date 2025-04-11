@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json()); // To parse JSON bodies for both routes
 
 // MongoDB URI
-const mongoURI = 'mongodb://localhost:27017/new_instant_diaries';
+const mongoURI = 'mongodb+srv://sarathi:071845@cluster-1.lbtsnjq.mongodb.net/new_instant_diaries?retryWrites=true&w=majority';
 
 // Connect to MongoDB
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
